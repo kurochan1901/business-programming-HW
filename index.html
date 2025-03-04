@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--宣告文件類型-->
+<html lang="zh-TW"> <!--語言中文-->
+<head>
+    <meta charset="UTF-8"> 
+    <!--指定字元編碼為 UTF-8，可以正確顯示中文與特殊符號。-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--設定網頁在行動裝置上的顯示方式。-->
+    <title>我的第一個 HTML 頁面</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <style>
+        .city {
+          background-color: skyblue;
+          color: white;
+          border: 2px solid black;
+          margin: 20px;
+          padding: 20px;
+        }
+        
+        .note {
+          font-size: 120%;
+          color: red;
+        }
+        
+        </style>
+    <!--style是用來設定網頁的樣式-->
+    <!--style裡面的.city是一個類別，可以用來設定網頁元素的樣式-->
+</head>
+
+<body>
+    <h1>Hello, VS Code!</h1>
+    <p>這是我的第一個 HTML 頁面。</p>
+    <p>我正在學習<br>HTML</p>
+    <!--br是換行-->
+
+    <h2>The href Attribute</h2>
+    <p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+
+    <h2>The src Attribute</h2>
+    <p>HTML images are defined with the img tag, and the filename of the image source is specified in the src attribute:</p>
+    <img src="img_girl.jpg" width="200" height="300" alt="Girl with a jacket">
+    
+    <p style="color:red;">This is a red paragraph.</p>
+    <!--紅色內文-->
+
+    <p title="I'm a tooltip">This is a paragraph.</p>
+    <!--滑鼠移至上方會顯示提示-->
+    
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+      
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+      
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+      
+      <h1>My <span class="note">Important</span> Heading</h1>
+      <p>This is some <span class="note">important</span> text.</p>
+      <!--span是區塊元素 div區塊會換行 span不會-->
+      
+
+</body>
+
+</html>
+
