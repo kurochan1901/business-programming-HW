@@ -2,13 +2,43 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>HTML + CSS + JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一個 HTML 頁面</title>
     <link rel="stylesheet" href="gptstyle.css"> <!-- 連結 CSS -->
 </head>
 <body>
 
-    <h1 id="title">歡迎來到我的網站！</h1>
-    <button onclick="changeText()">點我改變標題</button>
+<div class="container">
+    <h1>我的個人履歷</h1>
+    <h2>基本資料</h2>
+    <table>
+        <tr>
+            <th>姓名</th>
+            <td>王小明</td>
+        </tr>
+        <tr>
+            <th>年齡</th>
+            <td>21</td>
+        </tr>
+        <tr>
+            <th>學歷</th>
+            <td>台灣大學 資訊工程系</td>
+        </tr>
+    </table>
+    <h2>聯絡我</h2>
+    <form>
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">留言：</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">送出</button>
+    </form>
+</div>
 
     <script src="gptscript.js"></script> <!-- 連結 JavaScript -->
 </body>
